@@ -1,0 +1,20 @@
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 100px;
+    color: white;
+}
+div {
+    text-align: center;
+    font-weight: bold;
+    font-size: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+}
+html {
+    background: url(images/hell.jpg);
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    background-color: red;
+}

@@ -1,0 +1,110 @@
+body {
+    font-family: sans-serif;
+    margin: auto;
+    max-width: 100%;
+    background-color: black;
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: gray;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: red;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: white;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  h1 {
+    text-align: center;
+    padding: 25px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: white;
+    text-shadow: -1px -1px 0 red, 1px -1px 0 red, -1px 1px 0 red, 1px 1px 0 red;
+  }
+  p {
+    text-align: left;
+    padding: 25px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+  }
+  ul {
+    padding: 25px;
+  }
+span {
+    color: white;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.h2 {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+    margin-left: 15px;
+  }
+  .box {
+    margin: auto;
+    margin-top: 0;
+    width: 75%;
+    height: 100%;
+    background-color: black;
+    padding: 0 10px 25px;
+  }
+  img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 25%;
+    border: solid 3px red;
+  }
+  .flexitem {
+    width: 100%; 
+    height: 250px;
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    color\\\: red;
+  }
+  .enlarge {
+    width: 25%;
+    height: auto;
+    transition:all 1s;
+  }
+  .enlarge:hover {
+    width:75%;
+  }
