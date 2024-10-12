@@ -181,6 +181,12 @@ ul {
 }
 
 /* Weeks Button Specific Styles */
+.blank {
+  background-image: url(''); /* Replace with the path to your image */
+  background-size: cover; /* Cover the entire button */
+  background-position: center; /* Center the image within the button */
+  position: relative; /* For positioning the overlay */
+}
 .week-1 {
   background-image: url('images/fusion-360-logo.jpg'); /* Replace with the path to your image */
   background-size: cover; /* Cover the entire button */
@@ -249,6 +255,12 @@ ul {
 }
 .week-final {
   background-image: url('images/final.jpg'); /* Replace with the path to your image */
+  background-size: cover; /* Cover the entire button */
+  background-position: center; /* Center the image within the button */
+  position: relative; /* For positioning the overlay */
+}
+.flowerpot {
+  background-image: url('images/flower_pot_1.jpg'); /* Replace with the path to your image */
   background-size: cover; /* Cover the entire button */
   background-position: center; /* Center the image within the button */
   position: relative; /* For positioning the overlay */
