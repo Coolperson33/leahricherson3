@@ -1,0 +1,241 @@
+/* CSS Variables for consistency */
+:root {
+    --primary: #4b0082;
+    --secondary: #6a0dad;
+    --text-color: #333;
+    --bg-color: #fff;
+  }
+  
+  /* Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body using Old Standard TT */
+  body {
+    font-family: 'Old Standard TT', serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  
+  /* Fixed Sidebar on the left */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: var(--bg-color);
+    border-right: 1px solid #ddd;
+    padding: 20px;
+    overflow-y: auto;
+    text-align: center;
+  }
+  .sidebar-logo img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  .sidebar h3 {
+    font-size: 1.2rem;
+    color: var(--primary);
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--secondary);
+    padding-bottom: 5px;
+  }
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  .sidebar ul li {
+    margin-bottom: 10px;
+  }
+  .sidebar ul li a {
+    color: var(--secondary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  .sidebar ul li a:hover {
+    color: var(--primary);
+  }
+  
+  /* Content area to the right of the sidebar */
+  .content-area {
+    margin-left: 250px;
+  }
+  
+  /* Container for consistent layout */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Header */
+  header {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+  }
+  header h1 {
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  }
+  header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+  }
+  
+  /* Navigation */
+  nav {
+    background-color: var(--secondary);
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  nav ul li {
+    margin: 10px 15px;
+  }
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 2px;
+  }
+  nav ul li a:hover {
+    color: #ffe;
+    border-bottom: 2px solid #ffe;
+  }
+  
+  /* Main content */
+  .open-post h1 {
+    text-align: center;
+
+  }
+  .content {
+    margin: 40px auto;
+  }
+  .open-post {
+    background-color: #fafafa;
+    padding: 30px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
+  }
+  .open-post h2 {
+    font-size: 1.8rem;
+    color: var(--primary);
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--secondary);
+    padding-bottom: 10px;
+  }
+  .open-post p {
+    margin-bottom: 20px;
+    text-align: justify;
+    font-size: 1rem;
+  }
+  .open-post .intro::first-letter {
+    float: left;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-right: 10px;
+    line-height: 1;
+    color: var(--primary);
+  }
+  
+  /* Decorative Image inside Post */
+  .open-post figure {
+    margin: 20px auto;
+    text-align: center;
+  }
+  .open-post figure img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 5px;
+  }
+  .open-post figure figcaption {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    margin-top: 8px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: var(--primary);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 0.9rem;
+  }
+  img {
+  display: block;
+  margin: 20px auto;  /* Center the image horizontally */
+  max-width: 100%;  /* Ensure the image is responsive */
+  height: auto;
+}
+.parent-container {
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+    height: 100vh;            /* Optional: Make the container take full viewport height */
+  }
+  
+  .parent-container {
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+    height: 10vh;            /* Take up the full height of the viewport */
+  }
+  
+  .btn-rounded-white {
+    display: inline-block;
+    background: #4b0082;
+    color: white;
+    padding: 15px 25px;
+    border: 3px solid black;
+    border-radius: 30px;
+    @include transition();
+  
+    &:hover {
+      color: #4b0082;
+      background: gray;
+      text-decoration: none;
+    }
+  }
+  
+
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .sidebar {
+      position: relative;
+      width: 100%;
+      height: auto;
+      border-right: none;
+    }
+    .content-area {
+      margin-left: 0;
+    }
+    nav ul {
+      flex-direction: column;
+    }
+    nav ul li {
+      margin: 8px 0;
+    }
+  }
+  
